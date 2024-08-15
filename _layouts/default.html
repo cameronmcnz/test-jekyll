@@ -1,32 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-   
-	{% include head-common.html %}  
-     
-	{% if page.canonical %}
-	<link rel="canonical" href="{{ page.canonical }}" />
-	{% else %}
-	<!-- This is the else for if canonical -->	   
-	{% endif %}
 
-	{% if page.blurb %}
-	<meta name="description" content="{{ page.blurb }}"/>   
-	{% else %}
-	<meta name="description" content="Get UiPath Certified Fast with our online UiPath Practice tests, exam answers, study guides and tutorials. Learn RPA and quickly get your UiPath Associate and Developer Certification."/>   
-	{% endif %}
 	   
 	<title>{{ page.title }}</title>  
 
-	{% include boostrap-css.html %}
-	{% include style-common.html %}  
 	   
    </head>
 
    <body>
       <div class="container">
          <div class="row">
-		{% include navigation.html %}      
+		 
          </div>
          <div class="row">
             <article class="main col col-12 col-sm-12  col-md-8 col-lg-9 order-1 order-sm-1 order-lg-1 mt-0">
@@ -42,7 +27,7 @@
 			   -->
                      <!-- put a span in to stop the p tag from closing automatically -->
                      {{ content }}
-{% include tss-links.html	 %}					 
+				 
 
             </article>
             <aside  class="aside-2 col col-12  col-sm-12  col-md-4 col-lg-3 order-2 order-sm-2 order-lg-2 mt-0">
@@ -142,7 +127,7 @@
             </aside>
 			
          </div>
-		 {% include common-cookie-row.html %}
+
 		 
 	 
       </div>
